@@ -1,3 +1,125 @@
-h1 {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700;900&display=swap');
+
+* {
+    outline: none;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    padding: 0;
+    outline: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#main {
+    font-weight: 900;
+font-size: x-large;
+}
+h1, h3 {
+    padding-top: 30px;
+}
+nav a {
+    text-decoration: none;
+    color: #0065FC;
+}
+button {
+    font-weight: 700;
+}
+/* ************************NAVBAR**************************** */
+nav {
+overflow: hidden;
+position: fixed;
+width: 100%;
+background-color: white;
+}
+nav li {
+    float: right;
+    padding: 18px;
+}
+header li a {
+    text-decoration:none
+}
+#logo {
+    float: left;
+    padding: 18px 16px;
+}
+
+
+/* ***********************SECTION 1****************************** */
+#section1 {
+    margin-left: 5px;
+    padding-top: 60px;
+}
+.boutonR {
+    display: flex;
+    align-items: center;
+}
+
+.boutonR i {
+    border-radius: 10px 0 0 10px;
+    background: #F2F2F2;
+    padding: 10px;
+}
+input[type="text"],
+textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.boutonR a {
+    color: white;
+    background-color: blue;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    text-decoration: none;
+}
+#filtres {
+    display: flex;
+    align-items: center;
+  
+}
+#filtres ul {
+    display: flex;
+}
+#filtres button {
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+}
+#filtres i {
+border: 1px solid #ccc;
+background-color: #f2f2f2;
+border-radius: 50px;
+color: blue;
+padding: 12px;
+}
+#info {
+    display: flex;
+}
+#info i {
+    color: blue;
+}
+
+/* ******************HEBERGEMENTS************************ */
+
+#conteneur1 {
+    display: flex;
+}
+
+
+
+.conteneur2 {
+    background-color: #f2f2f2;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+.conteneur3 {
+    padding: 5px;
+    margin: 5px;
+    background-color: #f2f2f2;
 }
