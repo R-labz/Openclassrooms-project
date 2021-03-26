@@ -17,7 +17,7 @@ ul {
 #main {
     font-weight: 900;
 font-size: x-large;
-margin: 20px 0 10px 0;
+margin: 20px 0 0 0;
 }
 
 h1 {
@@ -57,21 +57,30 @@ header li a {
     padding-top: 60px;
 }
 
+#centre {
+    margin-top: 5px;
+}
 
 .boutonR {
     display: flex;
     align-items: center;
 }
 
+
 .boutonR i {
     border-radius: 10px 0 0 10px;
     background: #F2F2F2;
-    padding: 10px;
+    padding: 11px;
 }
 input[type="text"],
 textarea {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 9px;
+}
+
+input {
+    font-weight: 900;
+    font-size: 0.8em;
 }
 
 .boutonR a {
@@ -81,20 +90,30 @@ textarea {
     padding: 10px;
     text-decoration: none;
 }
+
 #filtres {
     display: flex;
     align-items: center;
-  
+    margin: 10px 0 10px 0;
 }
+
 #filtres ul {
     display: flex;
+    padding: 15px;
 }
+
+#filtres li {
+    padding: 0 15px 0 10px; 
+}
+
 #filtres button {
     background-color: white;
     border-radius: 50px;
     border: 1px solid #ccc;
     padding: 0;
 }
+
+
 #filtres i {
 border: 1px solid #ccc;
 background-color: #f2f2f2;
@@ -102,12 +121,21 @@ border-radius: 50px;
 color: blue;
 padding: 12px;
 }
+
 #info {
     display: flex;
-    justify-items: center;
+    align-items: center;
+    padding-bottom: 20px;
 }
+
 #info i {
     color: blue;
+    font-size: 0.6em;
+    border: 1px solid #ccc;
+background-color: white;
+border-radius: 50px;
+padding: 10px;
+margin-right: 10px;
 }
 
 /* ******************HEBERGEMENTS************************ */
@@ -121,6 +149,7 @@ padding: 12px;
 
 #conteneur1 h3 {
         padding: 20px;
+        
 }
 
 
@@ -158,31 +187,41 @@ margin: 10px;
 }
 
 
-.conteneur2 h4, p, i {
+.conteneur2 h4, .conteneur2 p, .conteneur2 i {
     padding-left: 5px;
     font-size: 100%;
     margin: 3px;
 }
 
+.conteneur2 h3 {
+    display: flex;
+    align-item: flex-start
+}
+
+
 .conteneur3 {
     background-color: #f2f2f2;
     border-radius: 15px;
     width: 30vw;
-    height: 100%;
-    margin: 0px;
+    margin: 10px;
     padding: 10px;
 }
 
 .title {
     display: flex;
-    
+    align-items: center;
     justify-content:space-between;
+}
+
+.title i {
+    font-size: 1.7em;
+    padding: 0;
 }
 
 .conteneur3 div:not(.soleil-txt, .coeur-txt, .bleu-txt, .stars, .title) {
     
     padding: 5px 5px 10px 5px;
-    margin: 13px;
+    margin: 26px;
     background-color: white;
     border-radius: 20px;
     display: flex;
@@ -192,18 +231,12 @@ margin: 10px;
 
 .conteneur3 img {
     border-radius: 20px 0 0 20px;
-    height: 100%;
     width: 40%;
     height: 150px;
 }
 
-.soleil-txt, .coeur-txt, .bleu-txt, .stars, .title {
-    margin: 10px 10px 0 ;
-    padding: 0 0 0 10px;   
-}
-
-.conteneur3 p, i 
-{padding-left: 0;}
+.conteneur3 p, .conteneur3 h4, .conteneur3 i 
+{padding-left: 5%;}
 
 /* ************************ACTIVITES****************************** */
 #activites {
