@@ -23,6 +23,8 @@ margin: 20px 0 0 0;
 
 h1 {
     padding-top: 20px;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 nav a {
@@ -144,41 +146,39 @@ margin-right: 10px;
 #conteneur1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-   width: 100%;
+    justify-content: space-between;
 }
-
-#conteneur1 h3 {
-        padding: 20px;
-        
-}
-
 
 .conteneur2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    width: 65vw;
+    padding: 13px;
+}
+
+.conteneur2 h1, h3 {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.hebergements {
  display: flex;
  flex-wrap: wrap;
  justify-content: space-around;
- width: 65vw;
-    background-color: #f2f2f2;
-    border-radius: 15px;
-padding: 10px;
-margin: 10px;
+ margin-top: 10px;
+ margin-bottom: 23px;
 }
 
-.conteneur2 h1 {
-    padding-right: 30vw;
-    
-}
-
-
-.conteneur2 div {
-    margin: 13px;
+.hebergements div {
     padding: 5px 5px 10px 5px;
+    margin-top: 13px;
+    margin-bottom: 13px;
     background-color: white;
     border-radius: 20px;
     width: 29%;
     box-shadow: 1px 1px 12px #555;
-    flex-wrap: no-wrap;
 }
 
 .conteneur2 img {
@@ -195,18 +195,13 @@ margin: 10px;
     margin: 3px;
 }
 
-.conteneur2 h3 {
-    display: flex;
-
-}
-
 
 .conteneur3 {
     background-color: #f2f2f2;
     border-radius: 15px;
     width: 30vw;
-    margin: 10px;
-    padding: 10px;
+    margin-left: 25px;
+    padding: 0px;
 }
 
 .conteneur3 h1 {
@@ -216,6 +211,9 @@ margin: 10px;
     display: flex;
     align-items: center;
     justify-content:space-between;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    margin-bottom: -16px;
 }
 
 .title i {
@@ -247,6 +245,8 @@ margin: 10px;
 /* ************************ACTIVITES****************************** */
 #activites {
     padding-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 #activites h1 {
@@ -256,10 +256,9 @@ margin: 10px;
 #conteneur4 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-   width: 100%;
+    justify-content: space-between;
+   width: 99%;
    height: 80vh;
-   
 }
 
 .vieuxPort, .calanques {
@@ -277,9 +276,10 @@ margin: 10px;
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 80%;
+    justify-content: space-between;
+    height: 85%;
     width: 100%;
-   margin: 20px;
+   
 }
 
 .promegues, .frioul, .garde, .longchamp {
