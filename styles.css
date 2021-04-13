@@ -8,11 +8,8 @@ body {
     font-family: Raleway, sans-serif;
     padding: 0;
     outline: none;
-    margin-right: 20px;
-    margin-left: 15px;
 }
 ul {
-    margin-right:3%;
     list-style-type: none;
 }
 #main {
@@ -56,8 +53,8 @@ width: 90%;
 }
 
 nav ul {
-    display: flex;
-        
+    display: flex;       
+    margin-right: 50px;
 }
 
 nav li {
@@ -85,16 +82,22 @@ color: #0065FC;
     width: 100%;
     }
    nav li {
-       padding-right: 35%;
+text-align: center;
+      width: 50%;
+      padding: 0;
+      border-bottom: 4px solid #F2F2F2
+   }
+nav li a .mobile {
+       border-bottom: 4px solid blue;
    }
    nav ul {
-    margin-left: 7%;
+    padding: 0;
    }
    #logo {
        margin-left: 10%;
    }
    #externe {
-       padding-left: 72%;
+       padding-left: 75%;
        padding-top: 30px;
    }
    #navAct {
@@ -103,16 +106,17 @@ color: #0065FC;
    }
 }
 
+.global {
+    padding-left: 15px;
+    padding-right: 20px;
+}
 /* ***********************SECTION 1****************************** */
 
-
-#section1 {
-    padding-top: 80px;
-}
 @media (max-width: 770px) {
     #section1 {
         margin-right: 12%;
         margin-left: 12%;
+        padding-top: 80px;
     }
    
 }
@@ -124,7 +128,10 @@ color: #0065FC;
     display: flex;
     align-items: center;
 }
-
+.boutonR .input {
+    font-weight: 900;
+    font: black:
+}
 
 .boutonR i {
     border-radius: 10px 0 0 10px;
@@ -245,6 +252,7 @@ margin-right: 10px;
     background-color: white;
     border-radius: 20px;
     width: 29%;
+    min-width: 200px;
     box-shadow: 1px 1px 12px #555;
 }
 
@@ -412,21 +420,31 @@ margin: 10px;
 
 @media (max-width: 770px) {
     .activites_images {
-        max-height: 150px;
-        display: block;
-        margin: auto;
+        max-height: 150px;      
     }
 }
 /* **************FOOTER************** */
 
 #conteneur7 {
     display: flex;
-    align-items: flex-start;
-    padding: 30px;
     background-color: #F2F2F2;
-    margin: -20px;
-    
+    align-items:baseline;
 }
+.aPropos {
+display: flex;
+flex-direction: column;
+width: 30%;
+}
+.nosHebergements {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        }
+.assistance {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    }
 
 @media (max-width: 770px) {
     footer {
@@ -435,13 +453,15 @@ margin: 10px;
     }
     #conteneur7 {
         flex-direction: column;
-        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    #conteneur7 div {
+        width: 100%;
     }
 }
 
-#conteneur7 ul {
-    margin: 50px;
-}
+
 
 
 
