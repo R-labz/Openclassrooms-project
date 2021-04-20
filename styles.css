@@ -44,21 +44,21 @@ i {
 /* ************************NAVBAR**************************** */
 nav {
 overflow: hidden;
-position: absolute;
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
-width: 90%;
 }
 
 nav ul {
     display: flex;       
     margin-right: 50px;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
-padding: 5px;
+padding: 27px;
 }
 
 header a {
@@ -69,7 +69,20 @@ header a {
 padding-left: 90%;
 padding-top: 42px;
 color: #0065FC;
+font-weight: 700;
 }
+.global {
+    padding-left: 15px;
+    padding-right: 20px;
+}
+#navAct {
+    font-weight: 500;
+    color: black;
+}
+nav li.active {
+    border-top: 2px solid #0065FC;
+}
+
 
 @media (max-width: 770px) {
     body {
@@ -84,14 +97,16 @@ color: #0065FC;
    nav li {
 text-align: center;
       width: 50%;
-      padding: 0;
+      padding: 15px 0;
       border-bottom: 4px solid #F2F2F2
    }
-nav li a .mobile {
+nav li.active {
+    border-top: none;
        border-bottom: 4px solid blue;
    }
    nav ul {
     padding: 0;
+
    }
    #logo {
        margin-left: 10%;
@@ -100,26 +115,15 @@ nav li a .mobile {
        padding-left: 75%;
        padding-top: 30px;
    }
-   #navAct {
-       font-weight: 500;
-       color: black;
+   .global {
+       padding: 0;
    }
 }
 
-.global {
-    padding-left: 15px;
-    padding-right: 20px;
-}
+
 /* ***********************SECTION 1****************************** */
 
-@media (max-width: 770px) {
-    #section1 {
-        margin-right: 12%;
-        margin-left: 12%;
-        padding-top: 80px;
-    }
-   
-}
+
 #section1 h1 {
     padding-top: 3%;
 }
@@ -131,17 +135,20 @@ nav li a .mobile {
 .boutonR .input {
     font-weight: 900;
     font: black:
+    height: 30px;
 }
 
 .boutonR i {
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0 0 15px;
     background: #F2F2F2;
-    padding: 11px;
+    padding: 7px 15px;
+    height: 30px;
 }
 input[type="text"],
 textarea {
     border: 1px solid #ccc;
     padding: 9px;
+    font-size: 16px;
 }
 
 input {
@@ -151,10 +158,12 @@ input {
 
 .boutonR a {
     color: white;
-    background-color: blue;
-    border-radius: 0 10px 10px 0;
-    padding: 10px;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    padding: 13px;
     text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 #filtres {
@@ -183,18 +192,19 @@ input {
     border: 1px solid #ccc;
     padding: 0;
     font-weight: 800;
+    font-size: 16px;
 }
 
 #filtres a {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 #filtres i {
 border: 1px solid #ccc;
-background-color: #f2f2f2;
+background-color:rgba(109, 199, 252, 0.4);
 border-radius: 50px;
-padding: 12px;
+padding: 15px;
 }
 
 #filtres i:hover {
@@ -222,6 +232,20 @@ padding: 10px;
 margin-right: 10px;
 }
 
+.fas.fa-search {
+    display: none;
+}
+
+@media (max-width: 770px) {
+    #section1 {
+        margin-right: 7%;
+        margin-left: 7%;
+        padding-top: 80px;
+    }
+   #section1 h1 {
+       padding-top: 15%;
+   }
+}
 /* ******************HEBERGEMENTS************************ */
 
 #conteneur1 {
@@ -239,10 +263,14 @@ margin-right: 10px;
     padding: 25px;
 }
 
+.conteneur2 h1, .conteneur2 h3 {
+    padding-left: 20px;
+}
+
 .hebergements {
  display: flex;
  flex-wrap: wrap;
- justify-content: space-between;
+ justify-content: space-around;
 }
 
 .hebergements div {
@@ -260,7 +288,8 @@ margin-right: 10px;
 .conteneur2 img {
     border-radius: 20px 20px 0 0;
     width: 100%;
-    height: 130px;
+    min-height: 130px;
+    max-height: 170px;
     object-fit: cover;
 }
 
@@ -275,9 +304,8 @@ margin-right: 10px;
 .conteneur3 {
     background-color: #f2f2f2;
     border-radius: 15px;
-
     margin-left: 25px;
-    padding: 0px;
+    padding: 25px;
 }
 
 .conteneur3 h1 {
@@ -311,7 +339,8 @@ margin-right: 10px;
 .conteneur3 img {
     border-radius: 20px 0 0 20px;
     width: 40%;
-    height: 150px;
+    min-height: 150px;
+    max-height: 180px;
     min-width: 130px;
     object-fit: cover;
 }
@@ -339,15 +368,20 @@ margin-right: 10px;
     }
     .conteneur3 {
         margin-left: 0;
+        padding: 0;
+    }
+    .conteneur3 div:not(.soleil-txt, .coeur-txt, .bleu-txt, .stars, .title) {
+        min-width: 100px;
     }
 }
 
 
 /* ************************ACTIVITES****************************** */
 #activites {
-    padding-top: 40px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
 }
 
 #activites h1 {
@@ -365,6 +399,9 @@ margin-right: 10px;
    #conteneur4 {
        flex-direction: column;
    } 
+   #conteneur5, #conteneur6 {
+       margin-right: 10px;
+   }
 }
 
 .vieuxPort, .calanques {
@@ -381,25 +418,22 @@ margin-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     width: 100%;
-margin: 10px;
+    margin: 10px;
 }
 
 .promegues, .frioul, .garde, .longchamp {
-    height: 50%;
+    height: 48%;
     width: 100%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 1px 1px 5px rgb(209, 207, 207);
-    margin: 10px 0 10px 0;
 }
 
 #conteneur4 img:not(.vieuxPort img, .calanques img)    
     {   width: 100%;
-        
         max-height: 220px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;}
@@ -421,6 +455,9 @@ margin: 10px;
 @media (max-width: 770px) {
     .activites_images {
         max-height: 150px;      
+    }
+    .promegues, .garde {
+        margin-bottom: 20px;
     }
 }
 /* **************FOOTER************** */
