@@ -25,7 +25,6 @@ h1 {
 
 nav a {
     text-decoration: none;
-    color: #0065FC;
 }
 button {
     font-weight: 700;
@@ -40,81 +39,61 @@ i {
 .fas.fa-map-marker-alt {
    color: black;
 }
-
-/* ************************NAVBAR**************************** */
-nav {
-overflow: hidden;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
+.global {
+    padding-left: 15px;
+    padding-right: 20px;
 }
-
-nav ul {
-    display: flex;       
-    margin-right: 50px;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-padding: 27px;
-}
-
 header a {
     text-decoration:none
 }
 
-#externe {
-padding-left: 90%;
-padding-top: 42px;
-color: #0065FC;
-font-weight: 700;
+/* ************************NAVBAR**************************** */
+
+#logo {
+    float: left;
+    padding-top: 35px;
 }
-.global {
-    padding-left: 15px;
-    padding-right: 20px;
+#externe a {
+    color: #0065FC;
+    font-weight: 700;
+    float: right;
+    padding-top: 35px;
+    padding-right: 10px;
+    }
+
+nav {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+margin-right: 120px;
+}
+
+nav a {
+    padding: 35px;
+}
+nav a.mobile {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
 #navAct {
     font-weight: 500;
     color: black;
 }
-nav li.active {
-    border-top: 2px solid #0065FC;
-}
-
 
 @media (max-width: 770px) {
     body {
         margin: 0;
     }
-    nav {
-        display: flex;
-    flex-direction: column;
-    align-items: initial;
-    width: 100%;
-    }
-   nav li {
-text-align: center;
-      width: 50%;
-      padding: 15px 0;
-      border-bottom: 4px solid #F2F2F2
+   nav {
+       padding-top: 80px;
+    justify-content: space-around;
    }
-nav li.active {
+
+   nav a.mobile {
     border-top: none;
        border-bottom: 4px solid blue;
    }
-   nav ul {
-    padding: 0;
-
-   }
-   #logo {
-       margin-left: 10%;
-   }
-   #externe {
-       padding-left: 75%;
-       padding-top: 30px;
-   }
+   
    .global {
        padding: 0;
    }
@@ -141,7 +120,7 @@ nav li.active {
 .boutonR i {
     border-radius: 15px 0 0 15px;
     background: #F2F2F2;
-    padding: 7px 15px;
+    padding: 7px;
     height: 30px;
 }
 input[type="text"],
@@ -208,12 +187,12 @@ padding: 15px;
 }
 
 #filtres i:hover {
-    background-color: gold;
+    background-color: rgba(109, 199, 252, 0.4);
   transition: background-color .5s;
 }
 
 #filtres button:hover {
-    background-color: gold;
+    background-color: rgba(109, 199, 252, 0.4);
   transition: background-color .5s;
 }
 
@@ -399,12 +378,9 @@ margin-right: 10px;
    #conteneur4 {
        flex-direction: column;
    } 
-   #conteneur5, #conteneur6 {
-       margin-right: 10px;
-   }
 }
 
-.vieuxPort, .calanques {
+.vieuxPort, .calanques {git 
     border-radius: 20px;
     display: flex;
     flex-direction: column;
