@@ -154,14 +154,9 @@ nav a {
 /* ***********************SECTION 1****************************** */
 
 
-#section1 h1 {
-    padding-top: 3%;
-}
-
 #main {
     font-weight: 900;
     font-size: x-large;
-    margin-top: 3%;
 }
 
 #centre {
@@ -353,7 +348,7 @@ left: -2px;
 
 .hebergements div {
     padding: 5px 5px 10px 5px;
-    margin: 13px 10px 13px 0;
+    margin: 13px 10px 13px -4px;
     background-color: white;
     border-radius: 20px;
     width: 29%;
@@ -537,6 +532,7 @@ left: -2px;
 @media (max-width: 770px) {
     .vieuxPort, .calanques {
         width: initial;
+        margin: 16px 25px;
     }
     #conteneur5, #conteneur6 {
         width: initial;
