@@ -532,7 +532,7 @@ left: -2px;
 @media (max-width: 770px) {
     .vieuxPort, .calanques {
         width: initial;
-        margin: 16px 25px;
+       
     }
     #conteneur5, #conteneur6 {
         width: initial;
