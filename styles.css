@@ -15,8 +15,12 @@ ul {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 700;
+}
+
+h4 {
+    font-size: 18px;
 }
 
 button {
@@ -40,7 +44,7 @@ header a {
 .global {
     /*padding-left: 15px;
     padding-right: 20px;*/
-    padding: 0 30px;
+    padding: 0 40px;
 }
 
 header a {
@@ -295,6 +299,15 @@ left: -2px;
     .fas.fa-search {
         display: none;
     }
+    #section1 {
+        margin: 0 30px;
+    }
+    #conteneur1 {
+        margin: 0 30px;
+    }
+    .navbar {
+        margin: 0 30px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -324,7 +337,7 @@ left: -2px;
 #conteneur1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .conteneur2 {
@@ -334,6 +347,7 @@ left: -2px;
     background-color: #f2f2f2;
     border-radius: 15px;
     padding: 25px;
+    margin-right: 15px;
 }
 
 .conteneur2 h1, .conteneur2 h3 {
@@ -361,7 +375,7 @@ left: -2px;
     border-radius: 20px 20px 0 0;
     width: 100%;
     min-height: 130px;
-    max-height: 170px;
+    max-height: 150px;
     object-fit: cover;
 }
 
@@ -373,6 +387,11 @@ left: -2px;
 }
 
 @media (max-width: 770px) {
+    .conteneur2 {
+        margin-right: 0;
+        padding: 32px;
+    }
+
     .conteneur2 h1, .conteneur2 h3 {
         padding-left: 0;
     }
@@ -388,6 +407,7 @@ left: -2px;
 .conteneur3 h1 {
     padding-left: 8%;
 }
+
 .title {
     display: flex;
     align-items: center;
@@ -402,6 +422,14 @@ left: -2px;
     padding: 0;
 }
 
+.conteneur3 h4 {
+    margin:0;
+}
+
+.conteneur3 p {
+    margin-top: 6px;
+}
+
 .soleil, .coeur, .bleu {
     
     padding: 5px 5px 5px 5px;
@@ -411,11 +439,13 @@ left: -2px;
     display: flex;
     box-shadow: 1px 1px 12px #555;
     min-width: 400px;
+    height: 160px;
 }
 .soleil1, .coeur1, .bleu1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .conteneur3 img {
@@ -423,7 +453,6 @@ left: -2px;
     width: 40%;
     min-height: 150px;
     max-height: 180px;
-    min-width: 130px;
     object-fit: cover;
     margin-right: 15px;
 }
@@ -486,7 +515,7 @@ left: -2px;
     flex-direction: column;
     box-shadow: 1px 1px 5px rgb(209, 207, 207);
     width: 100%;
-    margin: 10px;
+    margin: 10px 20px;
     max-height: 585px;
 }
 
@@ -499,7 +528,7 @@ left: -2px;
 }
 
 .promegues, .frioul, .garde, .longchamp {
-    height: 48%;
+    height: 47%;
     width: 100%;
     border-radius: 20px;
     display: flex;
@@ -516,6 +545,7 @@ left: -2px;
 
 .activites_images {
     overflow: hidden;
+    height: 100%;
 }
 
 .vieuxPort img, .calanques img {
@@ -523,6 +553,7 @@ left: -2px;
     width: 100%;
     min-height: 180px;
     border-radius: 20px 20px 0 0;
+    height: 100%;
 }
 
 #conteneur4 h4 {
@@ -532,17 +563,19 @@ left: -2px;
 @media (max-width: 770px) {
     .vieuxPort, .calanques {
         width: initial;
-       
+        margin: 15px 25px;  
     }
+
     #conteneur5, #conteneur6 {
         width: initial;
+        margin: 15px 25px;
     }
     
     .activites_images {
         max-height: 150px;      
     }
     .promegues, .garde {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 }
 /* **************FOOTER************** */
