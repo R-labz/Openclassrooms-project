@@ -254,6 +254,11 @@ input {
     padding-left: 10px;
 }
 
+#filtres span {
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
 #filtres i:not(.fas.fa-child) {
 background-color:#e4efff;
 border-radius: 50px;
