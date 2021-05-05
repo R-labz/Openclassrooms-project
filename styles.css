@@ -174,7 +174,6 @@ nav a {
 }
 .boutonR .input {
     font-weight: 700;
-    font: black;
     height: 30px;
 }
 ::placeholder 
@@ -259,7 +258,7 @@ input {
     padding-left: 10px;
 }
 
-#filtres i:not(.fas.fa-child) {
+#filtres i:not(.fas.fa-child ) {
 background-color:#e4efff;
 border-radius: 50px;
 padding: 18px;
@@ -391,7 +390,18 @@ left: -2px;
     margin: 3px;
 }
 
-@media (max-width: 770px) {
+@media (min-width: 913px) and (max-width:1272px) {
+    #conteneur1 {
+        flex-direction: row-reverse;
+    }
+    .conteneur2 {
+        min-width: 470px;
+        margin-left: 10px;
+        padding: 15px;
+    } 
+    }
+
+@media (max-width: 912px) {
     .conteneur2 {
         margin-right: 0;
         padding: 32px;
@@ -443,7 +453,7 @@ left: -2px;
     border-radius: 20px;
     display: flex;
     box-shadow: 1px 1px 12px #555;
-    min-width: 400px;
+    min-width: 300px;
     height: 160px;
 }
 .soleil1, .coeur1, .bleu1 {
@@ -462,8 +472,14 @@ left: -2px;
     margin-right: 15px;
 }
 
+@media (min-width: 913px) and (max-width:1272px) {
+.conteneur3 {
+    margin-right: 10px;
+    padding: 15px;
+}  
+}
 
-@media (max-width: 770px) {
+@media (max-width: 912px) {
     #conteneur1 {
         flex-direction: column-reverse;
     }
@@ -564,6 +580,8 @@ left: -2px;
 #conteneur4 h4 {
     padding-left: 10%;
 }
+
+
 
 @media (max-width: 770px) {
     .vieuxPort, .calanques {
