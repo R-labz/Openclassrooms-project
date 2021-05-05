@@ -258,7 +258,7 @@ input {
     padding-left: 10px;
 }
 
-#filtres i:not(.fas.fa-child ) {
+#filtres i:not(.fas.fa-child) {
 background-color:#e4efff;
 border-radius: 50px;
 padding: 18px;
@@ -518,12 +518,22 @@ left: -2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 99%;
 }
 
-@media (max-width: 770px) {
+@media (min-width: 913px) and (max-width:1272px) {
+    #activites h1 {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 1272px) {
    #conteneur4 {
        flex-direction: column;
+       max-width: 800px;
+       margin-left: auto;
+       margin-right: auto;
    } 
    #activites {
        margin-top: 0;
@@ -583,7 +593,8 @@ left: -2px;
 
 
 
-@media (max-width: 770px) {
+@media (max-width: 1272px) {
+
     .vieuxPort, .calanques {
         width: initial;
         margin: 15px 25px;  
