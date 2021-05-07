@@ -258,7 +258,7 @@ input {
     padding-left: 10px;
 }
 
-#filtres i:not(.fas.fa-child) {
+#filtres i {
 background-color:#e4efff;
 border-radius: 50px;
 padding: 18px;
@@ -266,7 +266,7 @@ position: relative;
 left: -2px;
 }
 
-.fas.fa-child {
+#filtres i.fas.fa-child {
     background-color:#e4efff;
     border-radius: 50px;
     padding: 18px 20px;
@@ -319,7 +319,7 @@ left: -2px;
         margin-right: 7%;
         margin-left: 7%;
     }
-   #section1 h1 {
+   #main {
        padding-top: 15%;
    }
    .boutonR a {
@@ -390,25 +390,34 @@ left: -2px;
     margin: 3px;
 }
 
-@media (min-width: 913px) and (max-width:1272px) {
+@media (min-width: 771px) and (max-width: 1393px) {
     #conteneur1 {
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
     }
     .conteneur2 {
-        min-width: 470px;
-        margin-left: 10px;
-        padding: 15px;
-    } 
+        margin-right: 0;
     }
+}
 
-@media (max-width: 912px) {
+@media (max-width: 770px) {
+    #conteneur1 {
+        flex-direction: column-reverse;
+    }
     .conteneur2 {
         margin-right: 0;
         padding: 32px;
+        background-color: white;
     }
 
     .conteneur2 h1, .conteneur2 h3 {
         padding-left: 0;
+    }
+ 
+    .hebergements {
+        flex-direction: column;
+    }
+    .hebergements div {
+        width: 100%;
     }
 }
 
@@ -472,31 +481,64 @@ left: -2px;
     margin-right: 15px;
 }
 
-@media (min-width: 913px) and (max-width:1272px) {
-.conteneur3 {
-    margin-right: 10px;
-    padding: 15px;
-}  
+@media (min-width: 1700px) {
+    .conteneur2 {
+        width: 70%;
+    }
+    .conteneur3 {
+        width: 30%;
+    }
 }
 
-@media (max-width: 912px) {
-    #conteneur1 {
-        flex-direction: column-reverse;
+@media (min-width: 1000px) and (max-width: 1393px) {
+    .soleil, .coeur, .bleu {
+        width: 32%;
     }
-    .conteneur2 {
-        background-color: white;
+}
+
+
+@media (min-width: 771px) and (max-width: 1393px) {
+    .title {
+        margin-right: 0;
+        margin-bottom: 0;
     }
-    .hebergements {
-        flex-direction: column;
+    .conteneur3 h1 {
+        padding-left: 2%;
     }
-    .hebergements div {
-        width: 100%;
+    .conteneur3 {
+        margin-left: 0;
+        margin-bottom: 40px;
     }
+    .lesPlusPopulaires {
+        display: flex;
+        flex-direction: row;       
+    }
+    .soleil, .coeur, .bleu {
+        margin: 10px;
+        min-width: 200px;
+        height: 160px;
+    }
+    .soleil1, .coeur1, .bleu1 {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 771px) and (max-width: 1000px) {
+    .lesPlusPopulaires {
+        flex-wrap: wrap;
+    }
+    .soleil, .coeur, .bleu {
+        width: 99%;
+    }
+}
+
+
+@media (max-width: 770px) {
     .conteneur3 {
         margin-left: 0;
         padding: 0;
     }
-    .conteneur3 div:not(.soleil-txt, .coeur-txt, .bleu-txt, .stars, .title) {
+    .soleil, .coeur, .bleu {
         min-width: 100px;
     }
 }
@@ -510,30 +552,42 @@ left: -2px;
     margin-bottom: 60px;
 }
 
-#activites h1 {
+#activites h2 {
     margin: 20px;
+    font-size: 1.7em;
+    font-weight: 700;
 }
 
-#conteneur4 {
+.activitesGlobal {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-@media (min-width: 913px) and (max-width:1272px) {
-    #activites h1 {
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 100px;
+.conteneur4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+@media (min-width: 771px) and (max-width: 1393px) {
+    .activitesGlobal {
+        flex-direction: column;
+    }
+    .conteneur4 {
+        width: 99%;
+        margin-bottom: 25px;
     }
 }
 
-@media (max-width: 1272px) {
-   #conteneur4 {
+@media (max-width: 770px) {
+    .activitesGlobal {
+        flex-direction: column;
+    }
+   .conteneur4 {
        flex-direction: column;
-       max-width: 800px;
-       margin-left: auto;
-       margin-right: auto;
+       width: 99%;
    } 
    #activites {
        margin-top: 0;
@@ -568,18 +622,7 @@ left: -2px;
     box-shadow: 1px 1px 5px rgb(209, 207, 207);
 }
 
-#conteneur4 img:not(.vieuxPort img, .calanques img)    
-    {   width: 100%;
-        max-height: 220px;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;}
-
-.activites_images {
-    overflow: hidden;
-    height: 100%;
-}
-
-.vieuxPort img, .calanques img {
+.conteneur4 img    {   
     object-fit: cover;
     width: 100%;
     min-height: 180px;
@@ -587,14 +630,29 @@ left: -2px;
     height: 100%;
 }
 
-#conteneur4 h4 {
+.activites_images {
+    overflow: hidden;
+    height: 100%;
+}
+
+#conteneur5 img, #conteneur6 img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.conteneur4 h4 {
     padding-left: 10%;
 }
 
+@media (min-width: 771px) and (max-width: 1393px) {
+    .vieuxPort, .calanques {
+        margin-right: 50px;
+    }
+}
 
-
-@media (max-width: 1272px) {
-
+@media (max-width: 770px) {
     .vieuxPort, .calanques {
         width: initial;
         margin: 15px 25px;  
